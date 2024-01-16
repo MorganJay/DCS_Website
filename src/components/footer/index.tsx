@@ -40,7 +40,8 @@ const Footer = () => {
               </p>
               <a href="tel:07961974878">
                 <p className="footer-text">
-                <i className="fas fa-phone-alt me-2"></i>Tel: 079 6197 4878</p>
+                  <i className="fas fa-phone-alt me-2"></i>Tel: 07961184890
+                </p>
               </a>
               <p className="footer-text">
                 <i className="fas fa-map-marker-alt me-2"></i> Address: London

@@ -11,11 +11,11 @@ export default function Page() {
   return (
     <div className="_body">
     <Hero />
-      <Materials />
+      {/* <Materials />
       <Sub />
       <Stats />
       <RecentBlogs />
-      <Testimonials />
+      <Testimonials /> */}
       <Faq />
     </div>
   );

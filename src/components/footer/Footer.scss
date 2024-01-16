@@ -9,6 +9,7 @@
         transition: all ease 0.3s;
         border-radius: 50%;
         border: 1px solid $color;
+        
         a {
           transition: all ease 0.3s;
           font-size: 15px;
@@ -38,9 +39,10 @@
             font-weight: bolder;
           }
           .links {
-            a {
-              text-decoration: none;
-            }
+          }
+          a {
+            text-decoration: none;
+            color: inherit;
           }
         }
       }

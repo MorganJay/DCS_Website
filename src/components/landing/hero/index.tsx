@@ -13,7 +13,7 @@ const Hero = () => {
           <div className="c col-lg-6 col-12">
             <div className="left-side mb-lg-0 mb-5 text-lg-start text-center">
               <h3 className="title text-capitalize">
-                welcome to <span>openSchool</span> !
+                welcome to <span>DCS Learning & Resource Centre</span> !
               </h3>
               <p className="sub-title text-muted text-capitalize">
                 where your future begins
@@ -43,7 +43,12 @@ const Hero = () => {
 
           <div className="c col-lg-6 col-12">
             <div className="right-side text-lg-end text-center">
-              <Image className="w-75 img-fluid" src={hero} alt="hero" priority />
+              <Image
+                className="w-75 img-fluid"
+                src={hero}
+                alt="hero"
+                priority
+              />
             </div>
           </div>
         </div>

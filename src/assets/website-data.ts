@@ -3,6 +3,7 @@ export const ENTITY_NAME = 'DCS Learning and Resource Centre';
 export const ENTITY_PHONE = '07961184890';
 
 export const ENTITY_ADDRESS = 'London Road, Purfleet RM19 1QT';
+export const ENTITY_ADDRESS_MAP = 'https://maps.app.goo.gl/WPr8uVBjpmxrWknZ9';
 export const ENTITY_EMAIL_ADDRESS = 'info@dcslearningcentre.org.uk';
 
 export const SOCIAL_ACCOUNTS_LIST = [

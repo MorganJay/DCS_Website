@@ -7,6 +7,7 @@ import {
   ENTITY_NAME,
   SOCIAL_ACCOUNTS_LIST,
   NAVBAR_ITEMS,
+  ENTITY_ADDRESS_MAP,
 } from '@/assets/website-data';
 
 import './Footer.css';
@@ -47,10 +48,12 @@ const Footer = () => {
                   <i className="fas fa-phone-alt me-2"></i>Tel: {ENTITY_PHONE}
                 </p>
               </a>
-              <p className="footer-text">
-                <i className="fas fa-map-marker-alt me-2"></i> Address:{' '}
-                {ENTITY_ADDRESS}
-              </p>
+              <a href={`${ENTITY_ADDRESS_MAP}`}>
+                <p className="footer-text">
+                  <i className="fas fa-map-marker-alt me-2"></i> Address:{' '}
+                  {ENTITY_ADDRESS}
+                </p>
+              </a>
 
               <a href={`mailto:${ENTITY_EMAIL_ADDRESS}`}>
                 <h6 className="footer-e-mail text-muted">
@@ -95,7 +98,8 @@ const Footer = () => {
         </div>
         <div className="copyrights text-center">
           <p className="small text-muted mb-0">
-            &copy; 2024 All rights reserved. <Link href="/">{ENTITY_NAME}</Link>
+            &copy; {new Date().getFullYear()} All rights reserved.{' '}
+            <Link href="/">{ENTITY_NAME}</Link>
           </p>
         </div>
       </div>

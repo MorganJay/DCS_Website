@@ -2,7 +2,13 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
-import { navbar_items } from './Data';
+import {
+  ENTITY_PHONE,
+  ENTITY_ADDRESS,
+  NAVBAR_ITEMS,
+  SOCIAL_ACCOUNTS_LIST,
+  ENTITY_ADDRESS_MAP,
+} from '@/assets/website-data';
 
 import './Navbar.css';
 
@@ -29,10 +35,47 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar navbar-expand-lg navbar-light text-dark fixed-top ${
+      className={`navbar navbar-expand-lg navbar-light text-dark fixed-top d-flex flex-column ${
         showShadow ? 'shadow-lg' : 'shadow'
       }`}
     >
+      <div className="container px-4 d-flex justify-content-end align-items-center text-white">
+        <div className="d-flex justify-content-end align-items-center">
+          <div className="d-none d-md-block text-white text-decoration-none">
+            <a
+              href={`tel:${ENTITY_PHONE}`}
+              className="text-white text-decoration-none mx-3"
+            >
+              <i className="fas fa-phone-alt mx-2"></i>
+              {ENTITY_PHONE}
+            </a>
+            <a
+              href={`${ENTITY_ADDRESS_MAP}`}
+              className="text-white text-decoration-none mx-2"
+            >
+              <i className="fas fa-map-marker-alt mx-2"></i>
+              {ENTITY_ADDRESS}
+            </a>
+          </div>
+          <div className="d-flex justify-content-end align-items-center">
+            {SOCIAL_ACCOUNTS_LIST.map((item, index) => (
+              <div
+                className={`a account-${index} mx-1 px-2 py-1 rounded-circle shadow-lg`}
+                key={item.id}
+              >
+                <a
+                  className="text-center text-white"
+                  href={item.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className={item.icon}></i>
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
       <div className="container py-2">
         <Link className="navbar-brand" href="/">
           <i className="fas fa-school me-2"></i>
@@ -47,15 +90,15 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon text-white"></span>
         </button>
         <div
           className="collapse navbar-collapse justify-content-end"
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav">
-            {navbar_items.map(item => (
-              <li className="nav-item me-lg-3 my-lg-0 my-2" key={Math.random()}>
+            {NAVBAR_ITEMS.map(item => (
+              <li className="nav-item me-lg-3 my-lg-0 my-2" key={item.id}>
                 <Link
                   className="nav-link text-capitalize position-relative hover"
                   href={`/${item.path}`}

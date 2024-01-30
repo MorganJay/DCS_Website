@@ -48,7 +48,7 @@ const Footer = () => {
                   <i className="fas fa-phone-alt me-2"></i>Tel: {ENTITY_PHONE}
                 </p>
               </a>
-              <a href={`${ENTITY_ADDRESS_MAP}`}>
+              <a href={`${ENTITY_ADDRESS_MAP}`} target="_blank">
                 <p className="footer-text">
                   <i className="fas fa-map-marker-alt me-2"></i> Address:{' '}
                   {ENTITY_ADDRESS}

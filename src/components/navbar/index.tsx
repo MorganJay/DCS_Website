@@ -51,7 +51,9 @@ const Navbar = () => {
             </a>
             <a
               href={`${ENTITY_ADDRESS_MAP}`}
+              target="_blank"
               className="text-white text-decoration-none mx-2"
+              // <a href="http://www.myurltest.com" target="_blank"
             >
               <i className="fas fa-map-marker-alt mx-2"></i>
               {ENTITY_ADDRESS}

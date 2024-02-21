@@ -18,14 +18,29 @@ const AboutSect = () => {
                 About Us 
                 {/* <span>DCS Learning & Resource Centre</span> ! */}
               </h3>
-              <p className="sub-title text-muted text-capitalize">
-                where your future begins
-              </p>
               <p className="desc pb-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat
+              </p>
+              <p className="sub-title text-muted text-capitalize">
+Mission              </p>
+              <p className="desc pb-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              </p>
+              <p className="sub-title text-muted text-capitalize">
+Vision              </p>
+              <p className="desc pb-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              </p>
+              <p className="sub-title text-muted text-capitalize">
+Value              </p>
+              <p className="desc pb-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               </p>
               <div className="buttons">
                 <Link

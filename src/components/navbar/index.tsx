@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 import {
@@ -9,6 +10,8 @@ import {
   SOCIAL_ACCOUNTS_LIST,
   ENTITY_ADDRESS_MAP,
 } from '@/assets/website-data';
+
+import Logo from '/public/images/landing/DCS-Logo.jpeg';
 
 import './Navbar.css';
 
@@ -79,9 +82,12 @@ const Navbar = () => {
         </div>
       </div>
       <div className="container py-2">
-        <Link className="navbar-brand" href="/">
-          <i className="fas fa-school me-2"></i>
-          <span>DCS</span> Learning Centre
+        <Link className="navbar-brand d-flex justify-content-center gap-2" href="/">
+          <Image src={Logo} alt="DCS Logo" width={70} />
+          <div>
+            Divine Community Services <br />
+            <p>Learning and Resource Centre</p>
+          </div>
         </Link>
         <button
           className="navbar-toggler"
@@ -105,7 +111,6 @@ const Navbar = () => {
                   className="nav-link text-capitalize position-relative hover"
                   href={`/${item.path}`}
                 >
-                  <i className={`${item.icon} me-2`}></i>
                   {item.name === '' ? 'home' : item.name}
                 </Link>
               </li>

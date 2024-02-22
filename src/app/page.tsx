@@ -18,23 +18,22 @@ import Faq from '@/components/landing/faq';
 export default function Page() {
   return (
     <div className="_body">
-    <Hero />
-      {/* <Materials /> */}
-      {/* <Sub /> */}
-      {/* <Stats /> */}
-      {/* <Testimonials />  */}
-      {/* <RecentBlogs /> */}
-
-      
+    
+      <Hero />
       <AboutSect />
-      {/* <ServicesSection /> */}
-      {/* <Services /> */}
-      {/* <ActivitySection /> */}
+      {/* <ServicesSect /> */}
+      {/* <ActivitySect/> */}
       {/* <Testimonials /> */}
       {/* <RecentBlogs /> */}
-
-     
       <Faq />
+
+      {/* <Hero /> */}
+      <Materials />
+      {/* <Sub /> */}
+      <Stats />
+      <Testimonials /> 
+      {/* <RecentBlogs /> */}
+
     </div>
   );
 }

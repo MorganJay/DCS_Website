@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-// import aboutsect from '/public/images/sections/aboutsect.svg';
 import aboutsect from '/public/images/sections/hero.svg';
 
 
@@ -24,20 +23,17 @@ const AboutSect = () => {
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat
               </p>
-              <p className="sub-title text-muted text-capitalize">
-Mission              </p>
+              <p className="sub-title text-muted text-capitalize">Mission </p>
               <p className="desc pb-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               </p>
-              <p className="sub-title text-muted text-capitalize">
-Vision              </p>
+              <p className="sub-title text-muted text-capitalize">Vision </p>
               <p className="desc pb-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               </p>
-              <p className="sub-title text-muted text-capitalize">
-Value              </p>
+              <p className="sub-title text-muted text-capitalize">Value </p>
               <p className="desc pb-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. 

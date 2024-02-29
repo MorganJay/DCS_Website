@@ -1,22 +1,39 @@
 'use client';
 import Hero from '@/components/landing/hero';
-import Materials from '@/components/landing/materials';
+
+import Materials from '@/src/components/landing/materials';
 import Sub from '@/components/landing/subscription';
 import Stats from '@/components/landing/stats';
+// import Testimonials from '@/components/landing/testimonials';
+
+import AboutSect from '@/src/components/landing/aboutsect';
+import ServicesSection from '@/components/landing/subscription';
+import ActivitySection from '@/components/landing/stats';
 import Testimonials from '@/components/landing/testimonials';
-import Faq from '@/components/landing/faq';
 import RecentBlogs from '@/components/landing/recentblogs';
+
+import Faq from '@/components/landing/faq';
+
 
 export default function Page() {
   return (
     <div className="_body">
-    <Hero />
-      {/* <Materials />
-      <Sub />
-      <Stats />
-      <RecentBlogs />
-      <Testimonials /> */}
+    
+      <Hero />
+      <AboutSect />
+      {/* <ServicesSect /> */}
+      {/* <ActivitySect/> */}
+      {/* <Testimonials /> */}
+      {/* <RecentBlogs /> */}
       <Faq />
+
+      {/* <Hero /> */}
+      <Materials />
+      {/* <Sub /> */}
+      <Stats />
+      <Testimonials /> 
+      {/* <RecentBlogs /> */}
+
     </div>
   );
 }

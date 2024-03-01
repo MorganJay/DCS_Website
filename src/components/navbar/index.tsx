@@ -9,6 +9,7 @@ import {
   NAVBAR_ITEMS,
   SOCIAL_ACCOUNTS_LIST,
   ENTITY_ADDRESS_MAP,
+  ENTITY_NAME,
 } from '@/assets/website-data';
 
 import Logo from '/public/images/landing/DCS-Logo.jpeg';
@@ -22,9 +23,7 @@ const Navbar = () => {
     window.scrollY >= 80 ? setShowShadow(true) : setShowShadow(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      addShadow();
-    };
+    const handleScroll = () => addShadow();
 
     window.addEventListener('scroll', handleScroll);
 
@@ -38,7 +37,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar navbar-expand-lg navbar-light text-dark fixed-top d-flex flex-column ${
+      className={`p-0 navbar navbar-expand-lg navbar-light text-dark fixed-top d-flex flex-column ${
         showShadow ? 'shadow-lg' : 'shadow'
       }`}
     >
@@ -56,7 +55,6 @@ const Navbar = () => {
               href={`${ENTITY_ADDRESS_MAP}`}
               target="_blank"
               className="text-white text-decoration-none mx-2"
-              // <a href="http://www.myurltest.com" target="_blank"
             >
               <i className="fas fa-map-marker-alt mx-2"></i>
               {ENTITY_ADDRESS}
@@ -81,16 +79,22 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="container py-2">
-        <Link className="navbar-brand d-flex justify-content-center gap-2" href="/">
-          <Image src={Logo} alt="DCS Logo" width={70} />
-          <div>
+      <div className="container pb-2">
+        <Link
+          className="navbar-brand d-flex justify-content-center gap-2"
+          href="/"
+        >
+          <Image src={Logo} alt="DCS Logo" width={70} className="w-auto" />
+          <div
+            className="mt-3 mt-md-0"
+            style={{ fontSize: 'min(3vw, 1.25rem)' }}
+          >
             Divine Community Services <br />
             <p>Learning and Resource Centre</p>
           </div>
         </Link>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler shadow-none"
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
@@ -98,7 +102,8 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon text-white"></span>
+          <span className="navbar-toggler-icon d-none"></span>
+          <i className="fas fa-bars fs-1 text-white shadow-none"></i>
         </button>
         <div
           className="collapse navbar-collapse justify-content-end"

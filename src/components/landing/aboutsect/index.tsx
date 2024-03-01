@@ -3,7 +3,6 @@ import Image from 'next/image';
 
 import aboutsect from '/public/images/sections/hero.svg';
 
-
 import './AboutSect.css';
 
 const AboutSect = () => {
@@ -14,44 +13,36 @@ const AboutSect = () => {
           <div className="c col-lg-6 col-12">
             <div className="left-side mb-lg-0 mb-5 text-lg-start text-center">
               <h3 className="title text-capitalize">
-                About Us 
+                About Us
                 {/* <span>DCS Learning & Resource Centre</span> ! */}
               </h3>
               <p className="desc pb-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat
+                Divine Community Services is a dynamic and community-driven
+                organization based in Purfleet. Our primary objective is to
+                address the needs of our local community by providing essential
+                services and support to families.
               </p>
-              <p className="sub-title text-muted text-capitalize">Mission </p>
+              <h3 className="sub-title text-muted text-capitalize">Mission </h3>
               <p className="desc pb-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                To empower families and strengthen our community by offering
+                comprehensive services that enhance the well-being and
+                development of children.
               </p>
-              <p className="sub-title text-muted text-capitalize">Vision </p>
+              <h3 className="sub-title text-muted text-capitalize">Vision </h3>
               <p className="desc pb-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                To create a vibrant and inclusive community where every
+                individual, regardless of background or circumstance, has the
+                opportunity to thrive and reach their full potential. We
+                envision a future where families are supported, children are
+                nurtured, and community bonds are strengthened through
+                collaboration and empowerment.
               </p>
-              <p className="sub-title text-muted text-capitalize">Value </p>
+              <h3 className="sub-title text-muted text-capitalize">Values </h3>
               <p className="desc pb-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Commitment to client satisfaction Dedication to quality service
+                delivery Emphasis on community collaboration and support Focus
+                on nurturing children's talents and potential
               </p>
-              <div className="buttons">
-                <Link
-                  className="btn btn-danger text-capitalize me-3 shadow"
-                  href="/about"
-                >
-                  read more<i className="ms-2 fas fa-chevron-right"></i>
-                </Link>
-                {/* <Link
-                  className="btn btn-outline-danger text-capitalize shadow"
-                  href="/contact"
-                >
-                  get in touch<i className="ms-2 fas fa-envelope"></i>
-                </Link> */}
-              </div>
             </div>
           </div>
 

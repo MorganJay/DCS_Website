@@ -13,16 +13,13 @@ const Hero = () => {
           <div className="c col-lg-6 col-12">
             <div className="left-side mb-lg-0 mb-5 text-lg-start text-center">
               <h3 className="title text-capitalize">
-                welcome to <span>DCS Learning & Resource Centre</span> !
+              Empowering Our Community, One Family at a Time!
               </h3>
               <p className="sub-title text-muted text-capitalize">
-                where your future begins
+              Welcome to Divine Community Services
               </p>
               <p className="desc pb-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat
+              At Divine Community Services, we believe in building a stronger, more supportive community right here in Purfleet. Our dedicated team is committed to providing essential services tailored to the needs of local families. From school runs to childcare, pre-school programs to after-school activities, and engaging holiday events, we're here to make life easier for parents and more enriching for children.
               </p>
               <div className="buttons">
                 <Link

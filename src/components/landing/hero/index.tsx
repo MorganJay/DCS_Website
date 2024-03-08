@@ -23,7 +23,7 @@ const Hero = () => {
               </p>
               <div className="buttons">
                 <Link
-                  className="btn btn-danger text-capitalize me-3 shadow"
+                  className="btn text-capitalize me-3 shadow"
                   href="/about"
                 >
                   read more<i className="ms-2 fas fa-chevron-right"></i>

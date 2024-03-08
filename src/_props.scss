@@ -1,4 +1,4 @@
-$color: #e91e63;
+$color: #212529;
 
 @keyframes translation {
   0%,
@@ -28,13 +28,13 @@ $color: #e91e63;
 }
 
 @mixin span_title() {
-  color: #e91e63;
+  color: white;
 }
 
 @mixin under_title() {
   font-weight: bolder;
   text-decoration: none;
-  color: $color;
+  color: white;
   animation: coloring ease 2s infinite;
 }
 

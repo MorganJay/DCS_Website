@@ -1,4 +1,9 @@
-$color: #212529;
+$bg-color: #2f2552;
+$dark-color: #212529;
+
+.text-dark {
+  color: $bg-color;
+}
 
 @keyframes translation {
   0%,
@@ -15,7 +20,7 @@ $color: #212529;
 @keyframes coloring {
   0%,
   100% {
-    color: $color;
+    color: $bg-color;
   }
   50% {
     color: grey;
@@ -28,7 +33,7 @@ $color: #212529;
 }
 
 @mixin span_title() {
-  color: white;
+  color: $bg-color;
 }
 
 @mixin under_title() {

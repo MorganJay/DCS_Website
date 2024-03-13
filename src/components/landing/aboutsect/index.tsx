@@ -10,7 +10,7 @@ const AboutSect = () => {
     <div className="container py-5 mb-3">
       <div className="">
         <div className="c col-lg-12">
-          <div className="mb-lg-0 mb-5">
+          <div className="mb-lg-0 mb-5 text-center text-md-left">
             <h3 className="title text-capitalize">
               About Us
               {/* <span>DCS Learning & Resource Centre</span> ! */}
@@ -21,13 +21,13 @@ const AboutSect = () => {
               address the needs of our local community by providing essential
               services and support to families.
             </p>
-            <h3 className="sub-title text-muted text-capitalize">Mission </h3>
+            <h3 className="sub-title text-muted">Mission</h3>
             <p className="desc pb-3">
               To empower families and strengthen our community by offering
               comprehensive services that enhance the well-being and development
               of children.
             </p>
-            <h3 className="sub-title text-muted text-capitalize">Vision </h3>
+            <h3 className="sub-title text-muted">Vision </h3>
             <p className="desc pb-3">
               To create a vibrant and inclusive community where every
               individual, regardless of background or circumstance, has the
@@ -36,7 +36,7 @@ const AboutSect = () => {
               community bonds are strengthened through collaboration and
               empowerment.
             </p>
-            <h3 className="sub-title text-muted text-capitalize">Values </h3>
+            <h3 className="sub-title text-muted">Values</h3>
             <p className="desc pb-3">
               Commitment to client satisfaction Dedication to quality service
               delivery Emphasis on community collaboration and support Focus on

@@ -34,7 +34,7 @@ const Faq = () => {
 					  data-bs-parent="#accordionExample"
 				  >
 					  <div className="accordion-body">
-						  <strong className="text-danger">
+						  <strong className="text-dark">
 							  Sed ut perspiciatis unde omnis iste.
 						  </strong>{' '}
 						  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

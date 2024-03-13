@@ -1,14 +1,13 @@
+@import '../../props';
 
-@import '../../props' ;
-
-#btn-up
-{
-	z-index: 9999 ;
-	top: 90% ;
-	right: 2% ;
-	transition: all ease 0.3s ;
-	&:hover
-	{
-		transform: scale(1.05);
-	}
+#btn-up {
+  z-index: 9999;
+  top: 90%;
+  right: 2%;
+  background-color: $bg-color;
+  color: white;
+  transition: all ease 0.3s;
+  &:hover {
+    transform: scale(1.05);
+  }
 }

@@ -1,5 +1,5 @@
-import type { Metadata } from 'next';
 import Script from 'next/script';
+import type { Metadata } from 'next';
 import StyledComponentsRegistry from '@/lib/registry';
 
 import Navbar from '@/components/navbar';
@@ -9,8 +9,9 @@ import ScrollButton from '@/components/scrollbtn';
 import './styles/landing/style.css';
 
 export const metadata: Metadata = {
-  title: 'DCS Learning and Resource Centre',
-  description: 'A great business',
+  title: 'Divine Community Services, Learning and Resource Centre',
+  description:
+    'Welcome to your hub for empowering education and essential resources in Purfleet. Discover our comprehensive programs and supportive services designed to meet the diverse needs of families in our community.',
 };
 
 export default function RootLayout({
@@ -22,10 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
@@ -37,6 +35,7 @@ export default function RootLayout({
           href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
           crossOrigin="anonymous"
+          as="style"
         />
       </head>
       <body>
@@ -64,7 +63,6 @@ export default function RootLayout({
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
           crossOrigin="anonymous"
-          
         />
       </body>
     </html>

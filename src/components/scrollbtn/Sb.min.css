@@ -1,0 +1,2 @@
+@-webkit-keyframes translation{0%,100%{transform:translateX(0);opacity:1}50%{transform:translateX(10px);opacity:.3}}@keyframes translation{0%,100%{transform:translateX(0);opacity:1}50%{transform:translateX(10px);opacity:.3}}@-webkit-keyframes coloring{0%,100%{color:#2f2552}50%{color:gray}}@keyframes coloring{0%,100%{color:#2f2552}50%{color:gray}}#btn-up{z-index:9999;top:90%;right:2%;background-color:#2f2552;color:#fff;transition:all ease .3s}#btn-up:hover{transform:scale(1.05)}
+/*# sourceMappingURL=Sb.min.css.map */

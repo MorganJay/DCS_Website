@@ -25,7 +25,7 @@ const ScrollButton = () => {
 
   return (
     <button
-      className={`btn btn-danger rounded-circle btn-sm position-fixed ${
+    className={`btn rounded-circle btn-sm position-fixed ${
         show ? 'd-block' : 'd-none'
       }`}
       id="btn-up"

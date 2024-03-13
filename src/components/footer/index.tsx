@@ -98,8 +98,11 @@ const Footer = () => {
         </div>
         <div className="copyrights text-center">
           <p className="small text-muted mb-0">
-            &copy; {new Date().getFullYear()} All rights reserved.{' '}
-            <Link href="/">{ENTITY_NAME}</Link>
+            &copy; {new Date().getFullYear()}{' '}
+            <Link href="/" className="text-dark">
+              {ENTITY_NAME}.
+            </Link>{' '}
+            All rights reserved.
           </p>
         </div>
       </div>

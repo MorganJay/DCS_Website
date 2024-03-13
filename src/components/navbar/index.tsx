@@ -12,7 +12,7 @@ import {
   ENTITY_NAME,
 } from '@/assets/website-data';
 
-import Logo from '/public/images/landing/DCS-Logo.jpeg';
+import Logo from '/public/images/landing/DCS-logo-with-text-trimmed.png';
 
 import './Navbar.css';
 
@@ -37,7 +37,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`p-0 navbar navbar-expand-lg navbar-light text-dark fixed-top d-flex flex-column ${
+      className={`pb-2 navbar navbar-expand-lg navbar-light text-dark fixed-top d-flex flex-column ${
         showShadow ? 'shadow-lg' : 'shadow'
       }`}
     >
@@ -79,19 +79,19 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="container pb-2">
+      <div className="container pb-2 flex-nowrap">
         <Link
-          className="navbar-brand d-flex justify-content-center gap-2"
+          className="navbar-brand d-flex justify-content-center gap-2 m-0"
           href="/"
         >
-          <Image src={Logo} alt="DCS Logo" width={70} className="w-auto" />
-          <div
+          <Image src={Logo} alt="DCS Logo" width={300} priority />
+          {/* <div
             className="mt-3 mt-md-0"
             style={{ fontSize: 'min(3vw, 1.25rem)' }}
           >
             Divine Community Services <br />
             <p>Learning and Resource Centre</p>
-          </div>
+          </div> */}
         </Link>
         <button
           className="navbar-toggler shadow-none"

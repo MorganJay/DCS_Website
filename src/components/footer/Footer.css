@@ -1,3 +1,18 @@
+.text-dark {
+  color: #2f2552;
+}
+
+@-webkit-keyframes translation {
+  0%, 100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(10px);
+    opacity: 0.3;
+  }
+}
+
 @keyframes translation {
   0%, 100% {
     transform: translateX(0);
@@ -8,9 +23,17 @@
     opacity: 0.3;
   }
 }
+@-webkit-keyframes coloring {
+  0%, 100% {
+    color: #2f2552;
+  }
+  50% {
+    color: grey;
+  }
+}
 @keyframes coloring {
   0%, 100% {
-    color: #e91e63;
+    color: #2f2552;
   }
   50% {
     color: grey;
@@ -23,21 +46,21 @@
   cursor: pointer;
   transition: all ease 0.3s;
   border-radius: 50%;
-  border: 1px solid #e91e63;
+  border: 1px solid #433575;
 }
 .footer .container .footer-top .a a {
   transition: all ease 0.3s;
   font-size: 15px;
-  color: #e91e63;
+  color: #433575;
 }
 .footer .container .footer-top .a:hover {
-  background-color: #e91e63;
+  background-color: #433575;
 }
 .footer .container .footer-top .a:hover a {
   color: white;
 }
 .footer .container .row .c .s .footer-title {
-  color: #e91e63;
+  color: #433575;
   font-weight: bolder;
   font-size: 20px;
 }
@@ -57,6 +80,7 @@
   font-size: 15px;
 }
 .footer .container .copyrights p a {
-  color: #e91e63;
+  color: #433575;
   text-decoration: none;
-}/*# sourceMappingURL=Footer.css.map */
+}
+/*# sourceMappingURL=Footer.css.map */

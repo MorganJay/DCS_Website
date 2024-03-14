@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
 import {
@@ -18,9 +19,12 @@ import './Navbar.css';
 
 const Navbar = () => {
   const [showShadow, setShowShadow] = useState(false);
-
+  const [showMenu, setShowMenu] = useState(false);
+  const pathname = usePathname();
   const addShadow = () =>
     window.scrollY >= 80 ? setShowShadow(true) : setShowShadow(false);
+
+  const handleShowMenu = () => setShowMenu(!showMenu);
 
   useEffect(() => {
     const handleScroll = () => addShadow();
@@ -35,6 +39,15 @@ const Navbar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleRouteChange = () => {
+      // Do something when route changes, for example, collapse the menu
+      // Here you can add code to collapse your Bootstrap navbar menu
+      console.log('Route changed to:', { pathname });
+    };
+    console.log("renderding")
+    setShowMenu(false);
+  }, [pathname]);
   return (
     <nav
       className={`pb-2 navbar navbar-expand-lg navbar-light text-dark fixed-top d-flex flex-column ${
@@ -79,7 +92,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="container pb-2 flex-nowrap">
+      <div className="container pb-2">
         <Link
           className="navbar-brand d-flex justify-content-center gap-2 m-0"
           href="/"
@@ -99,14 +112,15 @@ const Navbar = () => {
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
-          aria-expanded="false"
+          aria-expanded={showMenu ? 'true' : 'false'}
           aria-label="Toggle navigation"
+          onClick={handleShowMenu}
         >
           <span className="navbar-toggler-icon d-none"></span>
           <i className="fas fa-bars fs-1 text-white shadow-none"></i>
         </button>
-        <div
-          className="collapse navbar-collapse justify-content-end"
+       {showMenu && (<div
+          className='collapse navbar-collapse justify-content-end'
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav">
@@ -121,7 +135,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div>)}
       </div>
     </nav>
   );

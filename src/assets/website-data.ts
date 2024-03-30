@@ -25,30 +25,30 @@ export const SOCIAL_ACCOUNTS_LIST = [
 ];
 
 export const NAVBAR_ITEMS = [
-  {
-    id: 1,
-    name: '',
-    path: '',
-    icon: 'fas fa-home',
-  },
-  {
-    id: 2,
-    name: 'about us',
-    path: 'about',
-    icon: 'fas fa-address-card',
-  },
-  {
-    id: 3,
-    name: 'services',
-    path: 'services',
-    icon: 'fas fa-blog',
-  },
-  {
-    id: 4,
-    name: 'activities and events',
-    path: 'activities',
-    icon: 'fas fa-book-open',
-  },
+  // {
+  //   id: 1,
+  //   name: '',
+  //   path: '',
+  //   icon: 'fas fa-home',
+  // },
+  // {
+  //   id: 2,
+  //   name: 'about us',
+  //   path: 'about',
+  //   icon: 'fas fa-address-card',
+  // },
+  // {
+  //   id: 3,
+  //   name: 'services',
+  //   path: 'services',
+  //   icon: 'fas fa-blog',
+  // },
+  // {
+  //   id: 4,
+  //   name: 'activities and events',
+  //   path: 'activities',
+  //   icon: 'fas fa-book-open',
+  // },
   {
     id: 5,
     name: 'contact us',

@@ -20,7 +20,7 @@ export default function Page() {
     <div className="_body">
       <Hero />
       <AboutSect />
-      <Faq />
+      {/* <Faq /> */}
       {/* <ServicesSect /> */}
       {/* <ActivitySect/> */}
       {/* <Testimonials /> */}

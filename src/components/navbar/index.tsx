@@ -30,6 +30,7 @@ const Navbar = () => {
     const handleScroll = () => addShadow();
 
     window.addEventListener('scroll', handleScroll);
+    if (window.screen.width > 768) setShowMenu(true);
 
     document.addEventListener('DOMContentLoaded', addShadow);
 
@@ -45,8 +46,9 @@ const Navbar = () => {
       // Here you can add code to collapse your Bootstrap navbar menu
       console.log('Route changed to:', { pathname });
     };
-    console.log("renderding")
-    setShowMenu(false);
+    console.log(window.screen.width);
+
+    if (window.screen.width < 768) setShowMenu(false);
   }, [pathname]);
   return (
     <nav
@@ -119,23 +121,25 @@ const Navbar = () => {
           <span className="navbar-toggler-icon d-none"></span>
           <i className="fas fa-bars fs-1 text-white shadow-none"></i>
         </button>
-       {showMenu && (<div
-          className='collapse navbar-collapse justify-content-end'
-          id="navbarSupportedContent"
-        >
-          <ul className="navbar-nav">
-            {NAVBAR_ITEMS.map(item => (
-              <li className="nav-item me-lg-3 my-lg-0 my-2" key={item.id}>
-                <Link
-                  className="nav-link text-capitalize position-relative hover"
-                  href={`/${item.path}`}
-                >
-                  {item.name === '' ? 'home' : item.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>)}
+        {showMenu && (
+          <div
+            className="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul className="navbar-nav">
+              {NAVBAR_ITEMS.map(item => (
+                <li className="nav-item me-lg-3 my-lg-0 my-2" key={item.id}>
+                  <Link
+                    className="nav-link text-capitalize position-relative hover"
+                    href={`/${item.path}`}
+                  >
+                    {item.name === '' ? 'home' : item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </nav>
   );
